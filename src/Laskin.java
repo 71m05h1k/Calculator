@@ -130,6 +130,8 @@ public class Laskin {
         gBC.gridx = 0;
         gBC.gridy = 0;
         jfrm.add(jtf,gBC);
+//        JTextField jtadd = new JTextField("gggg");
+//        jtf.add(jtadd);
 
         jfrm.setVisible(true);
     }
