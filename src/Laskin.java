@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * andrew on 6/22/15
@@ -25,6 +27,15 @@ public class Laskin {
         gBC.gridx = 1;
         gBC.gridy = 4;
         jfrm.add(button_0,gBC);
+        button_0.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+            bu
+            }
+        });
+
+
+
+
 
         JButton button_1 = new JButton("1");
         gBC.gridheight = 1;
@@ -130,9 +141,6 @@ public class Laskin {
         gBC.gridx = 0;
         gBC.gridy = 0;
         jfrm.add(jtf,gBC);
-//        JTextField jtadd = new JTextField("gggg");
-//        jtf.add(jtadd);
-
         jfrm.setVisible(true);
     }
 }
