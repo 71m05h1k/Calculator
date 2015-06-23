@@ -202,7 +202,7 @@ public class Laskin {
         gBC.gridx = 3;
         gBC.gridy = 4;
         jfrm.add(button_summ,gBC);
-        button_0.addActionListener(new ActionListener() {
+        button_summ.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
                 jtf.setText(other.rezultat(jtf.getText()));
             }

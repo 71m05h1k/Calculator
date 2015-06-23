@@ -1,5 +1,7 @@
 public class other {
     public static String rezultat(String s){
-        return "rezultat!";
+        String z = s;
+        z = "rezultat!";
+        return z;
     }
 }
