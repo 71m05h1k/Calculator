@@ -8,6 +8,8 @@ import java.awt.event.ActionListener;
  */
 public class Laskin {
     Laskin (){
+
+        JTextField jtf = new JTextField("abracadabra");
         JFrame jfrm = new JFrame("Calculator");
         jfrm.setSize(300 , 200);
         jfrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -27,15 +29,12 @@ public class Laskin {
         gBC.gridx = 1;
         gBC.gridy = 4;
         jfrm.add(button_0,gBC);
+
         button_0.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
-            bu
+//                jtf.setText(other.addtxt(jtf.toString() , "0"));
             }
         });
-
-
-
-
 
         JButton button_1 = new JButton("1");
         gBC.gridheight = 1;
@@ -135,11 +134,12 @@ public class Laskin {
         gBC.gridy = 4;
         jfrm.add(button_summ,gBC);
 
-        JTextField jtf = new JTextField("7350.1505");
+//        jtf = new JTextField("7350.1505");
         gBC.gridheight = 1;
         gBC.gridwidth = 5;
         gBC.gridx = 0;
         gBC.gridy = 0;
+        gBC.weightx = 50;
         jfrm.add(jtf,gBC);
         jfrm.setVisible(true);
     }
