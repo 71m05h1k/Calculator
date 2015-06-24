@@ -1,35 +1,34 @@
 public class other {
-    public static String rezultat(String s){
-    if (s.length() == 0) {
-            return "error!";
+    public static String rezultat(String s) {
+        if (s.length() == 0) {
+            return "Zero lenght!";
         }
-    String[] tokens = s.split(" ");
-    if (tokens.length != 3) {
-        return "incorrect lenght!";
-    }
-        return (vichislyaem(tokens[0] , tokens[1], tokens[2]));
-    }
+        String[] tokens = s.split(" ");
 
-    private static String vichislyaem(String token_0, String token_1, String token_2) {
-    int numb_1 = Integer.parseInt(token_0);
-    int numb_2 = Integer.parseInt(token_1);
-    int rez;
-        if (token_2.equals("+")) {
-        rez = numb_1 + numb_2;
+        Stack mystack = new Stack();
+        int n1;
+        int n2;
+        for (String z : tokens) {
+            if (z.equals("+")) {
+                n1 = mystack.pop();
+                n2 = mystack.pop();
+                mystack.push(n2 + n1);
+            } else if (z.equals("-")) {
+                n1 = mystack.pop();
+                n2 = mystack.pop();
+                mystack.push(n2 - n1);
+            } else if (z.equals("*")) {
+                n1 = mystack.pop();
+                n2 = mystack.pop();
+                mystack.push(n2 * n1);
+            } else if (z.equals("/")) {
+                n1 = mystack.pop();
+                n2 = mystack.pop();
+                mystack.push(n2 / n1);
+            } else {
+            mystack.push(Integer.parseInt(z));
+            }
         }
-        else if (token_2.equals("-")) {
-            rez = numb_1 - numb_2;
-        }
-        else if (token_2.equals("X")) {
-            rez = numb_1 * numb_2;
-        }
-
-        else if (token_2.equals("/")) {
-            rez = numb_1 / numb_2;
-        }
-        else {
-            return "hueta kakayato!";
-        }
-    return Integer.toString(rez);
+        return Integer.toString(mystack.pop());
     }
 }
