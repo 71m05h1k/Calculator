@@ -120,7 +120,6 @@ public class Laskin {
         });
 
         GridBagConstraints gBC = new GridBagConstraints(0,0,5,1,0,1,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(2,2,2,2),0,0);
-        jtf.setSize(250,30);
         jfrm.setLocationRelativeTo(null);
         jfrm.add(jtf,gBC);
         jfrm.setVisible(true);
@@ -131,7 +130,6 @@ public class Laskin {
         GridBagConstraints gBC = new GridBagConstraints(x,y,1,1,0,0,GridBagConstraints.BASELINE,GridBagConstraints.BOTH,new Insets(2,2,2,2),0,0);
         button.setFocusable(false);
         button.addActionListener(listener);
-//        button.setMinimumSize(new Dimension(50,50));
         jfrm.add(button,gBC);
     }
 }

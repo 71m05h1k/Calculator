@@ -20,7 +20,7 @@ public class other {
         else if (token_2.equals("-")) {
             rez = numb_1 - numb_2;
         }
-        else if (token_2.equals("Х")) {
+        else if (token_2.equals("X")) {
             rez = numb_1 * numb_2;
         }
 
