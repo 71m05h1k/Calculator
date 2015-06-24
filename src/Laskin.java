@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 /**
  * andrew on 6/22/15
@@ -11,9 +13,9 @@ public class Laskin {
 
     Laskin() {
 
-        final JTextField jtf = new JTextField("abracadabra");
+        final JTextField jtf = new JTextField("");
         jfrm = new JFrame("Calculator");
-        jfrm.setSize(300, 200);
+        jfrm.setSize(250, 180);
         jfrm.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         jfrm.setLayout(new GridBagLayout());
 
@@ -113,7 +115,6 @@ public class Laskin {
             }
         });
 
-
         createButton("=", 3, 4, new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
                 jtf.setText(other.rezultat(jtf.getText()));
@@ -122,6 +123,16 @@ public class Laskin {
 
         GridBagConstraints gBC = new GridBagConstraints(0, 0, 5, 1, 0, 1, GridBagConstraints.CENTER, GridBagConstraints.BOTH, new Insets(2, 2, 2, 2), 0, 0);
         jfrm.setLocationRelativeTo(null);
+
+        jtf.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                 if (e.getKeyCode()==KeyEvent.VK_ENTER){
+                 jtf.setText(other.rezultat(jtf.getText()));
+                }
+            }
+        });
+
+
         jfrm.add(jtf, gBC);
         jfrm.setVisible(true);
     }
