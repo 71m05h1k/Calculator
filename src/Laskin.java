@@ -21,6 +21,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 0;
         gBC.gridy = 1;
+        button_c.setSize(50,50);
         jfrm.add(button_c,gBC);
         button_c.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -33,6 +34,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 1;
         gBC.gridy = 4;
+        button_0.setSize(50,50);
         jfrm.add(button_0,gBC);
         button_0.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -45,6 +47,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 1;
         gBC.gridy = 3;
+        button_1.setSize(50,50);
         jfrm.add(button_1,gBC);
         button_1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -57,6 +60,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 2;
         gBC.gridy = 3;
+        button_2.setSize(50,50);
         jfrm.add(button_2,gBC);
         button_2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -69,6 +73,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 3;
         gBC.gridy = 3;
+        button_3.setSize(50,50);
         jfrm.add(button_3,gBC);
         button_3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -81,6 +86,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 1;
         gBC.gridy = 2;
+        button_4.setSize(50,50);
         jfrm.add(button_4,gBC);
         button_4.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -93,6 +99,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 2;
         gBC.gridy = 2;
+        button_5.setSize(50,50);
         jfrm.add(button_5,gBC);
         button_5.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -105,6 +112,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 3;
         gBC.gridy = 2;
+        button_6.setSize(50,50);
         jfrm.add(button_6,gBC);
         button_6.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -117,6 +125,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 1;
         gBC.gridy = 1;
+        button_7.setSize(50,50);
         jfrm.add(button_7,gBC);
         button_7.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -129,6 +138,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 2;
         gBC.gridy = 1;
+        button_8.setSize(50,50);
         jfrm.add(button_8,gBC);
         button_8.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -141,6 +151,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 3;
         gBC.gridy = 1;
+        button_9.setSize(50,50);
         jfrm.add(button_9,gBC);
         button_9.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -153,6 +164,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 4;
         gBC.gridy = 3;
+        button_plus.setSize(50,50);
         jfrm.add(button_plus,gBC);
         button_plus.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -165,6 +177,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 4;
         gBC.gridy = 2;
+        button_minus.setSize(50,50);
         jfrm.add(button_minus,gBC);
         button_minus.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -177,6 +190,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 4;
         gBC.gridy = 1;
+        button_mul.setSize(50,50);
         jfrm.add(button_mul,gBC);
         button_mul.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -189,6 +203,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 4;
         gBC.gridy = 4;
+        button_div.setSize(50,50);
         jfrm.add(button_div,gBC);
         button_div.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -201,6 +216,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 2;
         gBC.gridy = 4;
+        button_space.setSize(50,50);
         jfrm.add(button_space,gBC);
         button_space.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -214,6 +230,7 @@ public class Laskin {
         gBC.gridwidth = 1;
         gBC.gridx = 3;
         gBC.gridy = 4;
+        button_summ.setSize(50,50);
         jfrm.add(button_summ,gBC);
         button_summ.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -225,6 +242,7 @@ public class Laskin {
         gBC.gridwidth = 5;
         gBC.gridx = 0;
         gBC.gridy = 0;
+        jtf.setSize(250,20);
         jfrm.add(jtf,gBC);
         jfrm.setVisible(true);
     }
