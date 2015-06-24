@@ -149,7 +149,7 @@ public class Laskin {
         });
 
         JButton button_plus = new JButton("+");
-        gBC.gridheight = 2;
+        gBC.gridheight = 1;
         gBC.gridwidth = 1;
         gBC.gridx = 4;
         gBC.gridy = 3;
@@ -187,14 +187,27 @@ public class Laskin {
         JButton button_div = new JButton("/");
         gBC.gridheight = 1;
         gBC.gridwidth = 1;
-        gBC.gridx = 5;
-        gBC.gridy = 1;
+        gBC.gridx = 4;
+        gBC.gridy = 4;
         jfrm.add(button_div,gBC);
         button_div.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
                 jtf.setText(jtf.getText() + "/");
             }
         });
+
+        JButton button_space = new JButton(" ");
+        gBC.gridheight = 1;
+        gBC.gridwidth = 1;
+        gBC.gridx = 2;
+        gBC.gridy = 4;
+        jfrm.add(button_space,gBC);
+        button_space.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+                jtf.setText(jtf.getText() + " ");
+            }
+        });
+
 
         JButton button_summ = new JButton("=");
         gBC.gridheight = 1;
